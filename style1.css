@@ -1,0 +1,237 @@
+header {
+    background: #BF7B67;
+    padding: 20px;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo-img {
+    max-width: 60px;
+    margin-right: 5px;
+    transition: filter 0.3s ease;
+}
+
+nav {
+  background-color: #EADBC8;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+nav li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #32012F;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+nav li a:hover {
+  color: white;
+  background-color: #BF7B67;
+}
+
+nav .active {
+  background-color: #8B322C;
+}
+
+div {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Style table rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Style table cells */
+td, th {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 5px;
+}
+
+th {
+    padding: 5px; /* Increase padding for header cells */
+    background-color: #777861;
+    color: white;
+}
+
+/* Main Content Section */
+section {
+  background-color: #F5EFE6;
+  margin: 30px auto;
+  max-width: 1200px;
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Add shadow on hover */
+section:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+  background-color: #8B322C;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  border-top: 2px solid #333;
+}
+
+/* Image Overlay */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Slideshow */
+.slideshow-container {
+  max-width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+form {
+	font-size: 16px;
+	width: auto;
+    max-width: 75%;
+    margin: 0 auto;
+}
+	
+label {
+    display: block; /* Change to block to align with the form inputs */
+    margin-bottom: 5px; /* Reduce margin for labels */
+    font-weight: bold; /* Make labels bold */
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%; /* Make inputs fill the entire width */
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+/* Main Content */
+article {
+  width: 70%;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  width: 40%;
+  padding: 20px;
+  background-color: #f2f2f2;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust button styles */
+button[type="submit"],
+.logout-button button {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover,
+.logout-button button:hover {
+  background-color: #555;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  article,
+  aside {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  article,
+  aside {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
